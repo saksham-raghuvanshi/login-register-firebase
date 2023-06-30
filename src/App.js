@@ -1,6 +1,8 @@
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Home from "./Components/Home";
 import Sigin from "./Components/Sigin";
+import Register from "./Components/Register";
+import "./style/style.scss";
 
 function App() {
   return (
@@ -8,8 +10,8 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/sigin" element={<Sigin />} />
-          <Route path="/register" element={<register />} />
+          <Route path="/signin" element={<Sigin />} />
+          <Route path="/register" element={<Register />} />
         </Routes>
       </Router>
     </div>
